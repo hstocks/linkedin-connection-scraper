@@ -4,7 +4,7 @@ A script to retrieve the names, titles and email addresses of all of your Linked
 
 This makes use of the LinkedIn APIs directly, so no Selenium is required. Retrieved data is written to a CSV file.
 
-# Usage
+## Usage
 ```
 $ ./get_connections.py -h
 usage: get_connections.py [-h] [-e] [-n N] access_token csrf_token
