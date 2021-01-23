@@ -20,4 +20,9 @@ optional arguments:
 ```
 For the access token and CSRF token values, sign in to LinkedIn and get the value of the `li_at` and `JSESSIONID` cookies.
 
+## Sample Output
+```
+"John","Archer","Managing Director at Delight Clothing","john.archer@notreal.com","https://www.linkedin.com/in/johnarcher-fake/"
+"Rebecca","Wood","Entrepreneur | Inventor","rw2201@notreal.com","https://www.linkedin.com/in/rebeccaaaa-fake/"
+```
 **Disclaimer:** this may break as the APIs change over time. Works as of publishing.
