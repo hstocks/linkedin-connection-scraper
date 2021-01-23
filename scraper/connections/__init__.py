@@ -1,5 +1,4 @@
 import json
-import random
 import requests
 import re
 import shlex
@@ -103,7 +102,7 @@ class ConnectionScraper:
             connection: Connection = queue.get()
             email = scraper.get_email_from_username(connection.username)
             if email:
-                connection.email = email if random.random() < 0.5 else None
+                connection.email = email
 
     def populate_connection_emails(self, connections: List[Connection]) -> None:
         global queue
