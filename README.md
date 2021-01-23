@@ -1,12 +1,21 @@
-A script to retrieve the names, titles and email addresses of all LinkedIn connections. Saves the data to a CSV file.
-This uses the LinkedIn APIs directly, so no Selenium required.
+A script to retrieve the names, titles and email addresses of all of your LinkedIn connections. 
+
+This makes use of the LinkedIn APIs directly, so no Selenium is required. Retrieved data is written to a CSV file.
 
 # Usage
 ```
-./get_connections.py <access token> <csrf token>
+$ ./get_connections.py -h
+usage: get_connections.py [-h] [-e] [-n N] access_token csrf_token
+
+positional arguments:
+  access_token       From li_at cookie
+  csrf_token         From JSESSIONID cookie
+
+optional arguments:
+  -h, --help         show this help message and exit
+  -e, --with-emails  Only save connections with visible email addresses
+  -n N               Maximum number of connections to retrieve
 ```
+For the access token and CSRF token values, sign in to LinkedIn and get the value of these cookies.
 
-To get these values, sign in to LinkedIn and grab the `li_at` cookie for the access token, and `JSESSIONID` for the CSRF token.
-
-
-Disclaimer: this may break as the APIs change over time. Working as of Jan 2020.
+**Disclaimer:** this may break as the APIs change over time. Works as of publishing.
